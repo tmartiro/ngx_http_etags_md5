@@ -4,8 +4,7 @@ ngx_http_etags_md5
 module for nginx http server which replace Etag value with md5sum of the static file.
 
 ### Compilation and Installation
-download or clone this module into thedirectory you want.(in my case it was /usr/local/src)
-download nginx source in the same directory. At this point I tested this module for nginx version 1.6.0. So download command will be
+Download or clone this module into the directory you want.(in my case it was /usr/local/src). Then download nginx source in the same directory. At this point I tested this module for nginx version 1.6.0. So download command will be:
 
     curl -O http://nginx.org/download/nginx-1.6.0.tar.gz
     tar -xzf nginx-1.6.0.tar.gz
