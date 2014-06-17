@@ -9,11 +9,12 @@ Download or clone this module into the directory you want.(in my case it was /us
     curl -O http://nginx.org/download/nginx-1.6.0.tar.gz
     tar -xzf nginx-1.6.0.tar.gz
     cd nginx-1.6.0
-now you need to configure the sources for compiling. To prepare the configuration for etag_md5 module against nginx source type
+now you need to configure the module against nginx sources. To tell to configure tool about etag_md5 module type:
 
     configure --add-module=/usr/local/src/ngx_http_etags_md5
     make 
     make install
+
 
 ### Configuration
 Add `etagmd5` to the relevant `location` blocks in your `nginx.conf` file:
