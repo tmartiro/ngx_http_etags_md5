@@ -153,7 +153,7 @@ static ngx_int_t ngx_http_etags_md5_header_filter(ngx_http_request_t *r) {
     
     loc_conf = ngx_http_get_module_loc_conf( r, ngx_http_etags_md5_module );
     
-    // Is the module active?
+    // Ete aktivacraca configic
     if ( 1 == loc_conf->etagmd5 ) {
         p = ngx_http_map_uri_to_path( r, &path, &root, 0 );
         if ( NULL == p ) {
