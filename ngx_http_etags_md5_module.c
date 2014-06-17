@@ -1,5 +1,5 @@
 /*
- * Author: Tigran Martirosyan (tmartiro@frostsecurity.com)
+ * Author: Tigran Martirosyan (tmartiro@gmail.com)
  */
 
 #include <ngx_config.h>
