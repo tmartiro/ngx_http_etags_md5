@@ -169,9 +169,6 @@ static ngx_int_t ngx_http_etags_md5_header_filter(ngx_http_request_t *r) {
     ngx_table_elt_t  *etag;
     struct stat  stat_result;
     ngx_http_etags_md5_loc_conf_t   *loc_conf;
-
-
-    log = r->connection->log;
     
     loc_conf = ngx_http_get_module_loc_conf( r, ngx_http_etags_md5_module );
     
@@ -183,7 +180,7 @@ static ngx_int_t ngx_http_etags_md5_header_filter(ngx_http_request_t *r) {
         }
 
 
-        ngx_log_debug1(NGX_LOG_DEBUG_HTTP, log, 0,
+        ngx_log_debug1(NGX_LOG_DEBUG_HTTP, r->connection->log, 0,
                         "http filename: \"%s\"", path.data);
    	//File tenum em ka te chka 
         status = stat( (char *) path.data, &stat_result );
